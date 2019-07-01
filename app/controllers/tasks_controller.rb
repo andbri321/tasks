@@ -2,11 +2,11 @@ class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
 
   def index
-    @tasks = User.find(current_user.id).tasks.page(params[:page]).per(5)
+    @tasks = User.find(current_user.id).tasks.where(status: 1).page(params[:page]).per(5)
   end
 
   def show
-    
+
   end
 
   def new
