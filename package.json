@@ -5,7 +5,7 @@
   "name": "MyTasks",
   "private": true,
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "tether": "^1.4.6"
   }
 }
